@@ -14,7 +14,7 @@ echo ==========================
 
 git add .
 git commit -m "Actualizacion automatica"
-git push origin main
+git push origin master
 
 echo.
 echo SISTEMA COMPLETADO
