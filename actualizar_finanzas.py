@@ -3,7 +3,7 @@ import sqlite3
 import pandas as pd
 
 # ===== CONFIGURACION =====
-BASE_PATH = r"C:\Users\luism\OneDrive\Proyecto\FINANZAS_PINTOSANO"
+BASE_PATH = r"C:\Users\luism\OneDrive\Desarrollo\mi_software_dietetica\pintosano-finanzas"
 CARPETA_REPORTES = os.path.join(BASE_PATH, "reportes_caja")
 BASE_DATOS = os.path.join(BASE_PATH, "finanzas.db")
 
