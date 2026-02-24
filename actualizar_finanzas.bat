@@ -1,15 +1,21 @@
 @echo off
-cd /d C:\Users\luism\OneDrive\Proyecto\FINANZAS_PINTOSANO
 
-echo =============================
-echo ACTUALIZANDO FINANZAS
-echo =============================
+cd /d %~dp0
+
+echo ==========================
+echo ACTUALIZANDO DATOS
+echo ==========================
 
 python actualizar_finanzas.py
-python resumen_mensual.py
-python grafico_finanzas.py
-python reporte_pdf.py
+
+echo ==========================
+echo SUBIENDO A GITHUB
+echo ==========================
+
+git add .
+git commit -m "Actualizacion automatica"
+git push origin main
 
 echo.
-echo ===== SISTEMA COMPLETADO =====
+echo SISTEMA COMPLETADO
 pause
